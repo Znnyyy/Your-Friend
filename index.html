@@ -18,7 +18,7 @@
                 <h1 class="text-2xl sm:text-3xl font-bold font-titan">Y-Friend</h1>
             </div>
 
-            <ul class="hidden md:flex gap-8 lg:gap-16 text-base lg:text-lg">
+            <ul class="hidden lg:flex gap-8 lg:gap-16 text-base lg:text-lg">
                 <li><a href="" class="hover:text-[#4E755F] transition-colors">Beranda</a></li>
                 <li><a href="#" class="hover:text-[#4E755F] transition-colors">T-Mood</a></li>
                 <li><a href="#" class="hover:text-[#4E755F] transition-colors">Mulai-Belajar</a></li>
@@ -27,11 +27,11 @@
 
             <div class="flex items-center gap-4">
                 <div class="flex gap-1.5 items-center">
-                    <img src="/assets/images/landing/globe.png" alt="globe" class="h-5 w-5 sm:h-7 sm:w-7" />
+                    <img src="/assets/images/landing/globe.png" alt="globe" class="h-7 w-7 " />
                     <h2 class="text-base font-semibold hidden sm:block">Bahasa</h2>
                 </div>
 
-                <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-1" aria-label="Toggle menu">
+                <button id="menu-btn" class="lg:hidden flex flex-col gap-1.5 p-1" aria-label="Toggle menu">
                     <span class="line block w-7 h-1 bg-[#414944] rounded"></span>
                     <span class="line block w-7 h-1 bg-[#414944] rounded"></span>
                     <span class="line block w-7 h-1 bg-[#414944] rounded"></span>
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="md:hidden bg-[#F0EEE9] border-t border-[#d5d3ce]">
+        <div id="mobile-menu" class="lg:hidden bg-[#F0EEE9] border-t border-[#d5d3ce]">
             <ul class="flex flex-col text-[#414944] text-base font-semibold px-6 py-4 gap-4">
                 <li><a href="" class="block py-1 hover:text-[#4E755F]">Beranda</a></li>
                 <li><a href="#" class="block py-1 hover:text-[#4E755F]">T-Mood</a></li>
@@ -58,20 +58,20 @@
 
                 <div class="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
                     <div
-                        class=" text-[#3E6653] md:text-[128px] text-[60px] font-titan md:leading-22.5 leading-20">
+                        class=" text-[#3E6653] md:text-[128px] text-[70px] font-titan md:leading-22.5 leading-10">
                         YOUR
                     </div>
                     <div
-                        class="flex self-end text-[#BC8E60] pe-25 font-titan md:text-[64px] text-4xl leading-17.5 font-titan font-normal ">
+                        class="flex self-end text-[#BC8E60] md:pe-25 pe-10 font-titan md:text-[64px] text-4xl md:leading-17.5 leading-0 font-titan font-normal ">
                         Friend
                     </div>
-                    <p class="mt-6 max-w-md text-[#414944] font-tirra font-semibold leading-relaxed font-light">
+                    <p class="mt-6 max-w-md text-[#414944] font-tirra  md:text-base text-sm font-light leading-relaxed ">
                         Tempat terbaik untuk bercerita, mengatur waktu, dan menemukan ketenangan di tengah kesibukan
                         sekolah.
                     </p>
                 </div>
 
-                <div class="flex justify-center order-1 md:order-2">
+                <div class="flex justify-center order-2 md:order-1">
                     <img src="./assets/images/landing/hero.png" alt="Hero"
                         class="w-full max-w-[260px] sm:max-w-[360px] md:max-w-[440px] drop-shadow-2xl" />
                 </div>
@@ -164,11 +164,12 @@
                                 instrumen lo-fi akustik atau gemericik hujan harian, dan kendalikan kecemasanmu melalui
                                 panduan meditasi pernapasan kotak ("Box Breathing") teratur.
                             </p>
-                            <a href="#" class="text-[#D9A15C] text-sm mt-3 inline-block">Buka Ambience Space →</a>
+                            <a href="#" class="text-[#D9A15C] text-sm mt-3 md:inline-block hidden">Buka Ambience Space →</a>
                         </div>
                         <div class="shrink-0">
                             <img src="./assets/images/landing/raindrops.png" alt="" class="w-32 sm:w-44 sm:pr-8">
                         </div>
+                        <a href="#" class="text-[#D9A15C] text-sm mt-3 self-end flex md:hidden">Buka Ambience Space →</a>
                     </div>
                 </div>
 
@@ -235,7 +236,7 @@
                 class="bg-[#436853] rounded-4xl px-6 sm:px-10 py-8 flex flex-col lg:flex-row items-center justify-between gap-8">
 
                 <div class="text-center lg:text-left">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-titan text-[#C8D9C9] leading-tight mb-4">
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-titan text-[#C8D9C9] leading-tight mb-4">
                         Siap jadi versi <br class="hidden sm:block"> terbaik dirimu hari ini?
                     </h2>
                     <p class="text-[#DCE4DE] text-sm mb-6 max-w-sm mx-auto lg:mx-0">
@@ -247,7 +248,7 @@
                     </a>
                 </div>
 
-                <div class="shrink-0">
+                <div class="shrink-0 md:flex hidden">
                     <img src="./assets/images/landing/cta.png" alt="CTA Illustration"
                         class="w-[220px] sm:w-[280px] lg:w-[320px] mx-auto">
                 </div>

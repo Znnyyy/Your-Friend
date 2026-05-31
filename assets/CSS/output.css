@@ -472,6 +472,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -690,6 +693,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pe-0 {
+    padding-inline-end: calc(var(--spacing) * 0);
+  }
   .pe-10 {
     padding-inline-end: calc(var(--spacing) * 10);
   }
@@ -704,6 +710,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-end {
+    text-align: end;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -745,6 +754,13 @@
   }
   .text-\[64px\] {
     font-size: 64px;
+  }
+  .text-\[70px\] {
+    font-size: 70px;
+  }
+  .leading-0 {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
   }
   .leading-17 {
     --tw-leading: calc(var(--spacing) * 17);
@@ -1101,9 +1117,19 @@
       display: none;
     }
   }
+  .md\:inline-block {
+    @media (width >= 48rem) {
+      display: inline-block;
+    }
+  }
   .md\:max-w-\[440px\] {
     @media (width >= 48rem) {
       max-width: 440px;
+    }
+  }
+  .md\:shrink-0 {
+    @media (width >= 48rem) {
+      flex-shrink: 0;
     }
   }
   .md\:grid-cols-2 {
@@ -1126,9 +1152,26 @@
       align-self: flex-end;
     }
   }
+  .md\:pe-25 {
+    @media (width >= 48rem) {
+      padding-inline-end: calc(var(--spacing) * 25);
+    }
+  }
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
+    }
+  }
+  .md\:text-base {
+    @media (width >= 48rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .md\:text-sm {
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .md\:text-\[64px\] {
@@ -1139,6 +1182,12 @@
   .md\:text-\[128px\] {
     @media (width >= 48rem) {
       font-size: 128px;
+    }
+  }
+  .md\:leading-17\.5 {
+    @media (width >= 48rem) {
+      --tw-leading: calc(var(--spacing) * 17.5);
+      line-height: calc(var(--spacing) * 17.5);
     }
   }
   .md\:leading-22\.5 {
